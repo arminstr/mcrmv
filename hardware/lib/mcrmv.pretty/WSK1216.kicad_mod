@@ -1,0 +1,120 @@
+(footprint "WSK1216"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Power Metal Strip® Resistors, Low Value, High Power, Surface-Mount, 4-Terminal")
+	(property "Reference" "REF**"
+		(at 0.9 -4.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b0ddb392-fb2a-46a8-82a9-df777758a938")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "WSK1216"
+		(at 0.9 -3.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dfdbda8d-9321-4b9d-943e-569df8601be0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/30189/wsk1216.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1d42e048-9534-496f-963b-955c113da765")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Power Metal Strip® Resistors, Low Value, High Power, Surface-Mount, 4-Terminal"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e89cff8-57eb-4547-8e95-f3fb737b9a71")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1 -1.9)
+		(end 3.3 1.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fc3ae49a-e1b8-491c-9702-cfb3edc66df8")
+	)
+	(fp_rect
+		(start -0.755 -1.55)
+		(end 3.055 1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5f53c0ba-a00b-40c6-a363-ff894afd9094")
+	)
+	(pad "1" smd roundrect
+		(at 1.725 -1.1 90)
+		(size 1.5 2.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "c303ec84-541b-4993-b5e8-347964b7b3f2")
+	)
+	(pad "2" smd roundrect
+		(at -0.6 -1.1 90)
+		(size 1.5 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "f7ed2165-9bf3-49a3-a5e6-8cde0505561f")
+	)
+	(pad "3" smd roundrect
+		(at -0.6 1.1 90)
+		(size 1.5 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "88fc46ea-d8c4-4c4f-af62-9cebe8484a31")
+	)
+	(pad "4" smd roundrect
+		(at 1.725 1.1 90)
+		(size 1.5 2.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "461644b2-9fd7-4374-aa4a-108830225406")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/WSK12161L000FEA.step"
+		(offset
+			(xyz 4.9 0 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)

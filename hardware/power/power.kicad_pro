@@ -48,11 +48,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|99495000|81655000|0e031b06-988f-449d-a151-55037dc17695|af965a93-38c8-49dc-ab2d-32d9b5f0d643",
+          "this is fine"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -646,10 +651,19 @@
     [
       "1383e0cb-a438-4417-ac4d-8380db6823d7",
       "Root"
+    ],
+    [
+      "5da9840d-74b8-4926-8582-380d657b97a6",
+      "fets0"
+    ],
+    [
+      "488d5f9f-66ab-42b0-8c9d-f23a6d1a6874",
+      "fets1"
     ]
   ],
   "text_variables": {
-    "REV": "1",
+    "AUTHOR": "arminstr",
+    "REV": "2",
     "SUBTITLE": "pwr",
     "TITLE": "mcrmv"
   }

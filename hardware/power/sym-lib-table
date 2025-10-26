@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mcrmv")(type "KiCad")(uri "/Users/armin/CloudStation/02_projects/mcrmv/hardware/lib/mcrmv.kicad_sym")(options "")(descr ""))
+)
