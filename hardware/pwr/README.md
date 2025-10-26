@@ -2,7 +2,7 @@
 /ˈpaʊər/
 
 ### TL;DR
-power stage implementing in phase current shunts, parallel mosfets, mounting holes and current tabs
+power stage implementing in phase current shunts, parallel mosfets, mounting holes, current tabs and NTC temperature sensors
 
 Current state of things in pictures: 
 
