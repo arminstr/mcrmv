@@ -56,6 +56,10 @@
         [
           "courtyards_overlap|99495000|81655000|0e031b06-988f-449d-a151-55037dc17695|af965a93-38c8-49dc-ab2d-32d9b5f0d643",
           "this is fine"
+        ],
+        [
+          "solder_mask_bridge|89540027|78008571|fdf8b166-fd05-4797-b195-dea247c511c0|961ae4f1-96e6-4bf7-8b76-880ea536a0fd",
+          "art"
         ]
       ],
       "meta": {
@@ -636,7 +640,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../docs/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -663,7 +667,7 @@
   ],
   "text_variables": {
     "AUTHOR": "arminstr",
-    "REV": "2",
+    "REV": "3.0",
     "SUBTITLE": "pwr",
     "TITLE": "mcrmv"
   }
