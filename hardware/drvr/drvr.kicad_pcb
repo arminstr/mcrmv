@@ -106,15 +106,100 @@
 	(net 22 "/GL_P3_1")
 	(net 23 "/GL_P3_2")
 	(net 24 "/NTC3")
-	(net 25 "/amp0/OUT")
-	(net 26 "/amp1/OUT")
-	(net 27 "/amp2/OUT")
-	(net 28 "/NTC3+")
-	(net 29 "/P2_TAB")
-	(net 30 "/NTC1+")
-	(net 31 "+80V")
-	(net 32 "/P1_TAB")
-	(net 33 "/P3_TAB")
+	(net 25 "/P2")
+	(net 26 "/NTC3+")
+	(net 27 "/P3")
+	(net 28 "+80V")
+	(net 29 "/P1")
+	(net 30 "/I_P1")
+	(net 31 "/I_P2")
+	(net 32 "/I_P3")
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
+		(layer "F.Cu")
+		(uuid "01561cde-65c4-40f6-82df-14558e6eef13")
+		(at 153 85 90)
+		(property "Reference" "J110"
+			(at 0 -5.15 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "bbdc4604-a578-4836-9bcb-fb2c589d07b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "198451a4-5624-4ed9-8514-1e21d060e175")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b053d2ff-05b9-4ce7-a674-1d48c6f65662")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c67348fb-4c65-4cde-9e4a-d869989b888c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/e047d23e-caa1-4141-93b0-a15b638fbae7")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 2 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "18597b5c-af3d-4df8-bc85-3c6725150428")
+		)
+		(pad "1" smd roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.5)
+			(net 2 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "6198793a-44f2-40b7-92ee-92185ca82484")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "mcrmv:PinHeader2x2_1mm_Solder"
 		(locked yes)
 		(layer "F.Cu")
@@ -462,67 +547,6 @@
 	)
 	(footprint ""
 		(layer "F.Cu")
-		(uuid "17e62ff5-59eb-4159-9008-8ddbb5c938de")
-		(at 171.35 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "900ec5d1-2d05-43c7-8861-a8a78bc9e4ce")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "6bc4da42-4923-49b0-959d-16fa5de5dbb4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0c54aa87-7d13-4551-acee-6b3e909bcaa2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1832c43f-3415-40bb-abba-bb8288168fbb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 7 "/S1_P")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "712ce07d-e1b2-4ef0-945a-214bd5cc524f")
-		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
 		(uuid "187410ab-2f39-4567-a0ab-865d4666871d")
 		(at 171.35 99)
 		(property "Reference" ""
@@ -579,68 +603,6 @@
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "cde5d10e-63d0-469f-8b28-5480865449d0")
-		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "19bc7076-541c-4774-972c-ea9543f9ec7f")
-		(at 166 99.4)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "7a7deb26-92dc-4302-9a2e-c212c451aadc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "e571549c-20c0-4147-9ae4-48b920881fd3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3ea658ac-d7bb-41dc-8d0d-9c2fdc04550c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "446613e2-78b9-4866-9810-e429be09846c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at 0 0 90)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 33 "/P3_TAB")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "95b1bb10-3247-41d6-b428-e62ce3ec92f1")
 		)
 		(embedded_fonts no)
 	)
@@ -1276,187 +1238,89 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint ""
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
 		(layer "F.Cu")
-		(uuid "248b7189-328c-4dd5-bda7-e03d5967977a")
-		(at 171.35 70)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "752d5d23-72dc-40f9-a6c6-d5c13648b565")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "4de99f41-d488-4959-be97-f500eab3a036")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a65b6ee1-50f5-4b56-90e0-3dd012b88a9b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef7a9391-e2da-4f2b-abb8-728803813a91")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "3" smd rect
-			(at 0 0)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 5 "/S1_N")
-			(pinfunction "Pin_3")
-			(pintype "passive")
-			(uuid "bbe6caab-fffd-4b29-8153-00d923b50f95")
-		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "32afda45-7005-4bc7-bc7b-79b1da1a7706")
+		(uuid "2f792602-9ece-4c2b-a2c5-5db642a70bd7")
 		(at 166 84.5)
-		(property "Reference" ""
-			(at 0 0 0)
+		(property "Reference" "J112"
+			(at 0 -5.15 0)
+			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "e1f2a1b7-2d58-4ef2-b872-38e6d03f4fcd")
+			(uuid "27179e34-59a1-4c1b-9f8f-bcdb808fb559")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
+					(size 1 1)
+					(thickness 0.1)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 0)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "ff88ece1-f024-4799-b36d-e533790e63f3")
+			(uuid "cce1c13b-9e3f-4577-b1ad-fa1b662886ac")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3a0273f8-b981-4279-a7b1-83d771012e7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "20485d03-0e9d-44a2-9285-6f4fcbe3bea9")
+			(uuid "0cd2cfd9-5cad-4dae-b3ac-f22ad02032b3")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(pad "1" smd roundrect
-			(at 0 0 90)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 29 "/P2_TAB")
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7343198e-2298-4547-adea-5c81356d815a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/9473994f-2ae5-47bf-8aa2-e892b3fc88ac")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 25 "/P2")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "788a6215-9ed3-4d4b-abe8-0e05734251a6")
+			(uuid "d483b50b-95f5-442e-9262-7ecfc3c25fc1")
 		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "35791ff3-f149-4b25-be98-71094c8a31b1")
-		(at 174.65 70)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "028585ea-e2b4-40d9-9681-dbd88fd2c14e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "902ccd60-f466-4d04-8a60-845d5c35290b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aa33dbc3-0a0b-40b8-b078-1c24c0b8453c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "65895cf4-6d88-4d1c-9cd7-e5cb35c9f993")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "4" smd rect
+		(pad "1" smd roundrect
 			(at 0 0)
-			(size 2 0.5)
+			(size 6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 6 "/GH_P1_2")
-			(pinfunction "Pin_4")
+			(roundrect_rratio 0.5)
+			(net 25 "/P2")
+			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "9e6f2052-b3a3-4bef-98aa-76ab6ac6409f")
+			(uuid "0b2989c0-f5f6-4831-9846-e549e6fd4b50")
 		)
 		(embedded_fonts no)
 	)
@@ -1757,7 +1621,7 @@
 			(size 1.325 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 25 "/amp0/OUT")
+			(net 30 "/I_P1")
 			(pintype "output")
 			(uuid "40c14b0b-8583-4993-84c4-9c80421d6ffd")
 		)
@@ -1803,68 +1667,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "51f22866-8f49-4876-b4c7-eacbe8e6d2e7")
-		(at 153 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "741cbab5-8ae8-45ed-8220-d6aaea24da30")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "7b0a86a3-02c2-448f-9fac-8d7426425dcc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "493ad660-7fa0-4855-a290-0ca79666cb03")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ffad4af7-9314-4c0d-9e97-80223520e333")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at 0 0 180)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "1c379bd2-8fd3-43e6-973f-50e100b5bd30")
-		)
-		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -2064,67 +1866,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "5888f820-e08d-4486-ab71-8c52bee0d954")
-		(at 157.35 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "f5878e2d-bd65-4fa8-aa13-06eb52ffbf77")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "d869a20e-3b63-4476-a027-3f6d0e38a1f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "65212c83-749a-43d2-b156-e86dabbbf95f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "da17972c-6cf9-4eaf-afc3-f3e3708efe96")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "4" smd rect
-			(at 0 0 180)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 30 "/NTC1+")
-			(pinfunction "Pin_4")
-			(pintype "passive")
-			(uuid "4cd83054-681e-4011-a9a5-6fa98ea226e6")
-		)
-		(embedded_fonts no)
 	)
 	(footprint "mcrmv:PinHeader2x2_1mm_Solder"
 		(locked yes)
@@ -2792,67 +2533,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "76166a3f-0c2c-4a59-9dec-feaa580c834d")
-		(at 160.65 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "61f15387-bb0c-4f35-a745-4779647d2f29")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "8cf52160-8c71-4dee-8910-581b31f74f0b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9adabb21-d4b2-4e40-b192-cf589313b4e5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "53d8f8dc-e088-4959-9328-2542dc9f11c2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "3" smd rect
-			(at 0 0 180)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 17 "/GL_P1_1")
-			(pinfunction "Pin_3")
-			(pintype "passive")
-			(uuid "57d092fe-0f2a-428f-b048-62382da83dff")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "76e3c31d-ce23-4b65-a614-3296a451f676")
@@ -3052,65 +2732,175 @@
 			)
 		)
 	)
-	(footprint ""
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
 		(layer "F.Cu")
-		(uuid "78d33baf-08d1-4b8a-ace1-b70b71ad3283")
-		(at 166 69.5)
-		(property "Reference" ""
-			(at 0 0 0)
+		(uuid "7795ce0d-337f-467a-b704-ed500d8fc134")
+		(at 153 69 90)
+		(property "Reference" "J109"
+			(at 0 -5.15 90)
+			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "b7b24888-5db1-4bea-a5ba-9375bd06a45b")
+			(uuid "48c9b7c1-de20-455a-9d2e-2f55e316b8ab")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
+					(size 1 1)
+					(thickness 0.1)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 90)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "659dbc75-4595-460c-a72e-44d9d9976d64")
+			(uuid "bf449548-0a19-4f96-a283-4ef8b7b526d8")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a0b981be-9bca-4904-9357-18d8b61bcc98")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2cc7a976-88c4-4f6a-b894-c97cd310ac33")
+			(uuid "1deb8fea-75e2-4398-85d1-c46d39727635")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91959d45-fd75-499c-b189-1d44146b7879")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/0a78898f-0e46-407f-96fb-0504435020a9")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 2 "GND")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "510c4002-3df1-4afd-a7b0-f40d10b65aad")
 		)
 		(pad "1" smd roundrect
 			(at 0 0 90)
-			(size 3 6)
+			(size 6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 32 "/P1_TAB")
+			(roundrect_rratio 0.5)
+			(net 2 "GND")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "4c4c3f3f-7219-4ae1-a5ae-e7bc57ea0d21")
+			(uuid "039ae7e9-c25a-4afa-96da-10c9f79a1260")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
+		(layer "F.Cu")
+		(uuid "7eac928c-53fb-498c-a67c-2c83d74c35c0")
+		(at 166 69.5)
+		(property "Reference" "J111"
+			(at 0 -5.15 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "3c496d81-adee-4aae-a82a-51a4949d3e9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "fc89d819-24a6-4ebf-b458-552223e76c68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be1a2957-6cb6-4574-80df-01f61127afa6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f533c613-6fab-448b-84aa-a7b5d86e2bca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/dee553b5-7e47-49c3-bf18-b5b20e0ea8b9")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 29 "/P1")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "f3fc0bd8-2a91-4582-8bc5-0dbaccdc965c")
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 6 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.5)
+			(net 29 "/P1")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "1be439c0-df27-46aa-bc2d-15c1e2b83828")
 		)
 		(embedded_fonts no)
 	)
@@ -3172,67 +2962,6 @@
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "3c014e5c-0b4f-4f8c-9264-65c5981f31b6")
-		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "81ed8ffa-d72a-48dc-8d7d-818ae78de5cb")
-		(at 160.65 70)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "99d7c2a9-2f12-4fcb-b230-b3e5e4e46813")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "f7bfb8c9-9ce2-46a3-ac98-c108ac3e1644")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6880c147-a82a-41bf-8128-62794087165b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "63d978fc-9609-45a4-9e8a-d914d11c350a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at 0 0 180)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 16 "/GL_P1_2")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "48b9c2e1-cd97-4f07-b371-2ba6b73cb23b")
 		)
 		(embedded_fonts no)
 	)
@@ -3581,65 +3310,89 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint ""
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
 		(layer "F.Cu")
-		(uuid "8ccc09a8-b45d-4c6f-9b3e-54f82baedf5c")
-		(at 180 85)
-		(property "Reference" ""
-			(at 0 0 0)
+		(uuid "891ca3ad-fd15-4e46-8238-ae264e43dbb2")
+		(at 166 99.5)
+		(property "Reference" "J113"
+			(at 0 -5.15 0)
+			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "cecfa6f5-c6e2-47a2-8ad7-05f1c67dbab2")
+			(uuid "ec2fa166-b826-483b-9fce-470b7aef7ece")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
+					(size 1 1)
+					(thickness 0.1)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 0)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c96cc946-92ae-45fe-ad69-bdd7f0e1a844")
+			(uuid "e48b0740-504d-4264-9230-395025747d39")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef5b13ca-9f2e-46c7-bd74-cd3dfb3fade5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c262eed-b54d-463c-93f0-56bd3140a40a")
+			(uuid "1554d10b-fab6-4855-8a28-d34d63859f68")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(pad "1" smd roundrect
-			(at 0 0 180)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 31 "+80V")
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a335bce-d4e8-4aa3-ae49-b328285b182a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/52f0adb7-27c8-449f-aff3-722d08f7cd65")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 27 "/P3")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "4a1f456f-a44a-4b5a-a1e6-32b2c777ee49")
+			(uuid "4021793b-70df-474f-8416-bed36fef33c9")
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 6 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.5)
+			(net 27 "/P3")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "65c8ba3a-d966-4462-b4b9-a9f60688a0f0")
 		)
 		(embedded_fonts no)
 	)
@@ -4311,67 +4064,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "b923915c-99ca-41b3-8946-187035f5f65b")
-		(at 174.65 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "24b13394-fe54-4232-8855-c689f5113836")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "6a5d52ed-db9b-480c-9ffc-abef9af589c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "09f14dc7-27a2-4733-9a11-3897878a9455")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c6e1522a-0312-438c-a243-d0035321aae3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "2" smd rect
-			(at 0 0)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "/GH_P1_1")
-			(pinfunction "Pin_2")
-			(pintype "passive")
-			(uuid "640697d0-68ba-4e7d-acd7-c91c62e9485b")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bb4f9ba5-1ecc-4948-9556-905d7c2cb292")
@@ -4570,68 +4262,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "c2bc5c9c-36da-4bcc-98d8-2b691fa15572")
-		(at 180 69)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "a37ede9e-85a8-473a-9db7-c355d9435d8c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "cb371d42-8389-4231-9876-c222d1bf3e42")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c2b7a49c-f687-491f-8970-2794586ac9f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb5ef7bd-966d-478f-8c1e-1bcfdd6282a3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at 0 0 180)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 31 "+80V")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "159039f5-bc41-4382-bebd-ab61a0c9f32e")
-		)
-		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-8"
 		(layer "F.Cu")
@@ -4930,7 +4560,7 @@
 			(size 1.325 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 27 "/amp2/OUT")
+			(net 32 "/I_P3")
 			(pintype "output")
 			(uuid "190e5bb8-128f-4f9f-a3f0-ead3ee547b8b")
 		)
@@ -4977,126 +4607,89 @@
 			)
 		)
 	)
-	(footprint ""
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
 		(layer "F.Cu")
-		(uuid "dbdc9a83-1b20-4690-9db1-5c95cdb5b58b")
-		(at 157.35 70)
-		(property "Reference" ""
-			(at 0 0 0)
+		(uuid "de96611e-f0d5-4fbe-bc2d-9fa695f8cd89")
+		(at 180 69 90)
+		(property "Reference" "J107"
+			(at 0 -5.15 90)
+			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "25eae38d-ea3b-4db7-bc95-68feb4fd37b2")
+			(uuid "df1e9f02-b7ef-4112-bcd5-9e069f040090")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
+					(size 1 1)
+					(thickness 0.1)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 90)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "250b3548-c745-426a-8c27-2fd2f3961bdd")
+			(uuid "4a757e4b-b9f6-4ff0-b868-db0c052b78d0")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2e5ec4d5-995a-4310-bdcb-bbcfd150a2b2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c870d4ad-056d-471e-8da6-5b7230fef995")
+			(uuid "584cbfed-cefd-42fa-880f-90dce6266a6a")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(pad "2" smd rect
-			(at 0 0 180)
-			(size 2 0.5)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 2 "GND")
-			(pinfunction "Pin_2")
-			(pintype "passive")
-			(uuid "59affac0-0b6a-4112-8830-38b3ce4b1c5b")
-		)
-		(embedded_fonts no)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "df301754-eb6f-466e-bc42-cd971881a4cb")
-		(at 153 85)
-		(property "Reference" ""
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(uuid "682c89bb-5d70-449d-9f35-79b8e2279d99")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "75b3e168-6403-4c57-850d-66bbcbf37d14")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 90)
+			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77770fbb-4ff8-4cf0-959b-b8d258cd3a34")
+			(uuid "60c35aa5-ae23-4e26-814b-e872e2c53448")
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "98248d39-ad8e-4081-acb7-52017db32105")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at 0 0 180)
-			(size 3 6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 2 "GND")
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/c1c11a5c-feea-44f1-9b11-611ccdc45c29")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 28 "+80V")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "d6f42aad-6b8a-4feb-ac27-6c821e4f10cc")
+			(uuid "3c32c9a0-ec54-44d3-92df-e979a151b92d")
+		)
+		(pad "1" smd roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.5)
+			(net 28 "+80V")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "969f862e-bb33-4b0e-ab57-03d60043c42d")
 		)
 		(embedded_fonts no)
 	)
@@ -5154,7 +4747,7 @@
 			(at 0 0 180)
 			(size 2 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 28 "/NTC3+")
+			(net 26 "/NTC3+")
 			(pinfunction "Pin_4")
 			(pintype "passive")
 			(uuid "eee0fb00-63f7-4c88-a542-23fb80e21afc")
@@ -5458,7 +5051,7 @@
 			(size 1.325 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 26 "/amp1/OUT")
+			(net 31 "/I_P2")
 			(pintype "output")
 			(uuid "fc388699-6732-4ba1-b732-ed420ca79e8d")
 		)
@@ -5504,6 +5097,92 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "mcrmv:0.1x5mm_Strip_Cutout"
+		(locked yes)
+		(layer "F.Cu")
+		(uuid "ebaa4076-7e17-49ed-aa24-c709930dc60e")
+		(at 180 85 90)
+		(property "Reference" "J108"
+			(at 0 -5.15 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "a91cbd8f-9915-4f34-bb94-ac5bb6f57416")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "pwrCon_Solder_5mm"
+			(at 0 -3.65 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f5c5ea80-024d-4145-be88-1721c43a6a0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e257b468-dad3-4c8f-9c55-acda1465d780")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9a7ead5-2098-41aa-b532-1c95e5b948a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/0d9c9fd4-395b-4a3b-9eaa-aedb65a3aac4")
+		(sheetname "/")
+		(sheetfile "drvr.kicad_sch")
+		(attr smd)
+		(pad "1" thru_hole roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(drill oval 5.2 0.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers yes)
+			(keep_end_layers no)
+			(zone_layer_connections)
+			(roundrect_rratio 0.5)
+			(net 28 "+80V")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "5f1413fd-a93e-41ad-ae74-778b4c5f5c42")
+		)
+		(pad "1" smd roundrect
+			(at 0 0 90)
+			(size 6 1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.5)
+			(net 28 "+80V")
+			(pinfunction "Pin_1")
+			(pintype "passive")
+			(uuid "ac238229-e97e-4733-b04e-811363292106")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")

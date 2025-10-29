@@ -1,0 +1,75 @@
+(footprint "0.1x5mm_Strip_Cutout"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -5.15 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "95fffdeb-223a-4296-be6f-146219ac4e9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "0.1x5mm_Strip_Cutout"
+		(at 0 -3.65 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9a9fb6e6-9b03-491f-9315-48ae477e2803")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "324c7686-8bf2-4548-acf8-670504e21fd8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c45d5ff-dfe4-4a45-b9f4-d4e4fa3219e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 6 1)
+		(drill oval 5.2 0.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers no)
+		(roundrect_rratio 0.5)
+		(uuid "f2762b84-7569-4091-b871-7281c613379b")
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.5)
+		(uuid "b8fb2100-1187-47f6-b0a3-78a2db0ebdc3")
+	)
+	(embedded_fonts no)
+)

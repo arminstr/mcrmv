@@ -1,0 +1,257 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "db80bc9a-8227-48a4-8b96-e0b0fbd1690f")
+	(paper "A4")
+	(title_block
+		(title "${TITLE} - ${SUBTITLE}")
+		(rev "${REV}")
+		(company "github.com/${AUTHOR}")
+	)
+	(lib_symbols)
+	(bus_entry
+		(at 187.96 60.96)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130dfdcc-2673-436b-b71a-465b07ec3259")
+	)
+	(bus_entry
+		(at 187.96 55.88)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d4ab5bf-7ae8-491d-80d6-5c5296b5ea3a")
+	)
+	(bus_entry
+		(at 187.96 53.34)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c435196-f345-4ca1-9440-93e9122cd4a7")
+	)
+	(bus_entry
+		(at 187.96 58.42)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ee1311-4bf2-4d54-990b-3ef2beee70e8")
+	)
+	(bus
+		(pts
+			(xy 190.5 55.88) (xy 190.5 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e9e2b6-caf2-498d-a8c9-7d8fa69450eb")
+	)
+	(wire
+		(pts
+			(xy 179.07 53.34) (xy 187.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c07c480-3e0d-4ed7-a608-87993be131f4")
+	)
+	(wire
+		(pts
+			(xy 179.07 55.88) (xy 187.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d5f168-584b-4c80-bbe0-211fc40fdbf1")
+	)
+	(bus
+		(pts
+			(xy 190.5 58.42) (xy 190.5 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a0ed479-650d-40ea-a944-9c2b0d5cf439")
+	)
+	(bus
+		(pts
+			(xy 190.5 53.34) (xy 190.5 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e5d3916-03d1-437d-8da5-5148dd7ffdea")
+	)
+	(wire
+		(pts
+			(xy 179.07 60.96) (xy 187.96 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9072be8b-98fe-452a-b856-bf639ff3cdda")
+	)
+	(bus
+		(pts
+			(xy 190.5 50.8) (xy 203.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944d3ece-eeeb-4652-b3ec-281fb6948dd4")
+	)
+	(wire
+		(pts
+			(xy 179.07 58.42) (xy 187.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b03b050b-bc37-4080-a51f-c77b61655af6")
+	)
+	(label "SPI.TX"
+		(at 179.07 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bfc142f-98da-4898-beac-8b0a4da65a9a")
+	)
+	(label "SPI.CS"
+		(at 179.07 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f46ee9f-d985-460c-b25f-8072eeb18ffc")
+	)
+	(label "SPI.CLK"
+		(at 179.07 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c20ed339-b612-4501-83ab-1cda1571132d")
+	)
+	(label "SPI.RX"
+		(at 179.07 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed4cf8d1-1511-451f-adb4-1d17083c49b5")
+	)
+	(hierarchical_label "U2"
+		(shape input)
+		(at 50.8 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0da88143-8fef-4923-84a9-0bd661a0e55c")
+	)
+	(hierarchical_label "I2"
+		(shape input)
+		(at 50.8 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a43fc21-2f00-4239-8a2e-7f118f9a3a00")
+	)
+	(hierarchical_label "I3"
+		(shape input)
+		(at 50.8 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6e6faabc-7e02-430a-afe7-f8e1de5cec62")
+	)
+	(hierarchical_label "U3"
+		(shape input)
+		(at 50.8 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f1950eb-364c-4060-b0ce-a7e24c405324")
+	)
+	(hierarchical_label "UDC"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "85f3fad5-3e72-42d8-ab20-425ba66adcc9")
+	)
+	(hierarchical_label "U1"
+		(shape input)
+		(at 50.8 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a42a0615-a9de-4408-a470-b2191a68d56b")
+	)
+	(hierarchical_label "I1"
+		(shape input)
+		(at 50.8 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4759efe-d561-425f-ba8b-ec4e85002ab0")
+	)
+	(hierarchical_label "SPI{CLK,RX,TX,CS}"
+		(shape bidirectional)
+		(at 203.2 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e974c3d5-a637-4c81-9927-1dffa0fd7a86")
+	)
+)

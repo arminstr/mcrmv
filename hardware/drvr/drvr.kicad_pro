@@ -659,6 +659,14 @@
     [
       "1ffccdaa-51f8-41b9-bc8d-bada0fa03137",
       "amp2"
+    ],
+    [
+      "ac48ce9a-62aa-464c-b4b8-a7c8fd6ab1a5",
+      "control"
+    ],
+    [
+      "cbd88706-2574-4873-a472-7d79ff2fb731",
+      "daq"
     ]
   ],
   "text_variables": {
