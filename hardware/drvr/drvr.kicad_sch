@@ -1692,12 +1692,12 @@
 		(uuid "c8df7ffe-99b0-47ed-b805-8a4dce0d53b8")
 	)
 	(label "GH_P1_2"
-		(at 76.2 36.83 0)
+		(at 76.2 36.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ccab66cc-58b7-43f6-971b-d1f4c0ee4c60")
 	)
