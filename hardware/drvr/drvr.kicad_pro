@@ -667,6 +667,18 @@
     [
       "cbd88706-2574-4873-a472-7d79ff2fb731",
       "daq"
+    ],
+    [
+      "910a803c-34b5-4d88-a9f3-cf236218f1b3",
+      "gatedrive0"
+    ],
+    [
+      "9b9f606d-c70d-4154-9943-9184e55bb06a",
+      "gatedrive1"
+    ],
+    [
+      "87bd7111-59a3-4ada-993e-96677a40981d",
+      "gatedrive2"
     ]
   ],
   "text_variables": {
