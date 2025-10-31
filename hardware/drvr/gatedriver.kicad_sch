@@ -388,6 +388,24 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 2.54 -17.78 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 6.35 2.54 270)
 					(length 2.54)
@@ -727,6 +745,12 @@
 		)
 	)
 	(junction
+		(at 120.65 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd7afcc6-1dfe-4782-b909-a60e2426284b")
+	)
+	(junction
 		(at 95.25 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -741,6 +765,16 @@
 			(type default)
 		)
 		(uuid "0d49c9b4-3321-4946-8a23-86a16e05ae3e")
+	)
+	(wire
+		(pts
+			(xy 116.84 96.52) (xy 120.65 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed2f622-67f1-4b01-ac5d-61ae1944ec38")
 	)
 	(wire
 		(pts
@@ -824,7 +858,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 93.98) (xy 120.65 95.25)
+			(xy 120.65 93.98) (xy 120.65 96.52)
 		)
 		(stroke
 			(width 0)
@@ -851,6 +885,16 @@
 			(type default)
 		)
 		(uuid "8e427628-ed91-4f52-bac1-3ddc20f875fb")
+	)
+	(wire
+		(pts
+			(xy 116.84 93.98) (xy 116.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f72be7-87a0-435c-a395-758f1fdd848c")
 	)
 	(wire
 		(pts
@@ -891,6 +935,16 @@
 			(type default)
 		)
 		(uuid "e7101120-d9fb-4b53-a72a-69314e771005")
+	)
+	(wire
+		(pts
+			(xy 120.65 96.52) (xy 120.65 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8c4c01-0724-4159-a60a-f44657354685")
 	)
 	(hierarchical_label "L"
 		(shape input)
@@ -1112,7 +1166,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b7c8cc7-3eb6-47ee-a266-56143b506384")
-		(property "Reference" "U"
+		(property "Reference" "U802"
 			(at 106.934 71.882 0)
 			(effects
 				(font
@@ -1130,7 +1184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mcrmv:DRC0010J-VSON-10"
 			(at 114.3 76.2 0)
 			(effects
 				(font
@@ -1184,9 +1238,16 @@
 		(pin "1"
 			(uuid "ecb6c6ec-1b8d-4086-9280-6742eadec8fe")
 		)
+		(pin "11"
+			(uuid "7023ce6b-7256-43af-8884-9d986e0d855f")
+		)
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
+					(reference "U802")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
 					(reference "U802")
 					(unit 1)
 				)
@@ -1356,16 +1417,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 95.25 0)
+		(at 120.65 99.06 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bd83de56-3cec-4db6-8c24-1ad2044a09c5")
 		(property "Reference" "#PWR0704"
-			(at 120.65 101.6 0)
+			(at 120.65 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1374,7 +1435,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 100.33 0)
+			(at 120.65 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1382,7 +1443,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 95.25 0)
+			(at 120.65 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1452,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 95.25 0)
+			(at 120.65 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1400,7 +1461,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 95.25 0)
+			(at 120.65 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
