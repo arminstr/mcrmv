@@ -751,6 +751,12 @@
 		(uuid "cd7afcc6-1dfe-4782-b909-a60e2426284b")
 	)
 	(junction
+		(at 139.7 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3cef5f5-a189-4e49-b5ab-99b1d1f622ab")
+	)
+	(junction
 		(at 95.25 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -858,6 +864,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 100.33) (xy 140.97 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f58112e-f585-466f-8bf2-584386010f0d")
+	)
+	(wire
+		(pts
 			(xy 120.65 93.98) (xy 120.65 96.52)
 		)
 		(stroke
@@ -885,6 +901,16 @@
 			(type default)
 		)
 		(uuid "8e427628-ed91-4f52-bac1-3ddc20f875fb")
+	)
+	(wire
+		(pts
+			(xy 140.97 106.68) (xy 140.97 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab490b3-aece-4491-8258-bc2770b98dd2")
 	)
 	(wire
 		(pts
@@ -938,6 +964,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 86.36) (xy 146.05 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e94a1663-3a1c-40db-83d7-4c0506b4f9d6")
+	)
+	(wire
+		(pts
 			(xy 120.65 96.52) (xy 120.65 99.06)
 		)
 		(stroke
@@ -967,6 +1003,17 @@
 			(justify left)
 		)
 		(uuid "2252811b-a944-4526-8518-7a3e9db4d53a")
+	)
+	(hierarchical_label "PX"
+		(shape input)
+		(at 146.05 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "251af9d9-61eb-48f6-8d53-8951b8fdcabd")
 	)
 	(hierarchical_label "GH_PX"
 		(shape input)
@@ -1000,6 +1047,89 @@
 			(justify right)
 		)
 		(uuid "fd5898fb-8197-46df-9149-6624a1cc7462")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 140.97 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33a51143-d8dc-43d1-8326-8ea17e0623e1")
+		(property "Reference" "C703"
+			(at 147.32 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 147.32 103.378 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 147.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ffcaffcf-2827-4f02-9f9f-01a2196cfc90")
+		)
+		(pin "1"
+			(uuid "25b83edc-0031-4dc8-bcf8-d81974485b0b")
+		)
+		(instances
+			(project "drvr"
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
+					(reference "C903")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
+					(reference "C703")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
+					(reference "C803")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -1070,7 +1200,7 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "C804")
+					(reference "C902")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
@@ -1093,7 +1223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3458ce63-103b-471a-b995-c3e52a454c69")
-		(property "Reference" "R"
+		(property "Reference" "R701"
 			(at 97.79 85.852 90)
 			(effects
 				(font
@@ -1147,7 +1277,11 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "R802")
+					(reference "R901")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
+					(reference "R701")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
@@ -1166,7 +1300,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b7c8cc7-3eb6-47ee-a266-56143b506384")
-		(property "Reference" "U802"
+		(property "Reference" "U701"
 			(at 106.934 71.882 0)
 			(effects
 				(font
@@ -1244,11 +1378,11 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "U802")
+					(reference "U901")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
-					(reference "U802")
+					(reference "U701")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
@@ -1327,7 +1461,7 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "C803")
+					(reference "C901")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
@@ -1351,7 +1485,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "889e6708-34e3-4282-b34a-caf72c20ab5a")
-		(property "Reference" "#PWR0701"
+		(property "Reference" "#PWR0702"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -1401,15 +1535,89 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "#PWR0807")
+					(reference "#PWR0902")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
-					(reference "#PWR0701")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
 					(reference "#PWR0802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e16e026-27f0-464a-b43b-986049bb111e")
+		(property "Reference" "#PWR0707"
+			(at 140.97 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a894857-59fe-45d4-8408-d84cce19f353")
+		)
+		(instances
+			(project "drvr"
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
+					(reference "#PWR0907")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
+					(reference "#PWR0707")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
+					(reference "#PWR0807")
 					(unit 1)
 				)
 			)
@@ -1425,7 +1633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd83de56-3cec-4db6-8c24-1ad2044a09c5")
-		(property "Reference" "#PWR0704"
+		(property "Reference" "#PWR0703"
 			(at 120.65 105.41 0)
 			(effects
 				(font
@@ -1475,11 +1683,11 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "#PWR0808")
+					(reference "#PWR0903")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
-					(reference "#PWR0704")
+					(reference "#PWR0703")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
@@ -1499,7 +1707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caf2166d-2cf7-42bf-9744-b9b385b94375")
-		(property "Reference" "#PWR0705"
+		(property "Reference" "#PWR0701"
 			(at 95.25 93.98 0)
 			(effects
 				(font
@@ -1549,11 +1757,11 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "#PWR0806")
+					(reference "#PWR0901")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
-					(reference "#PWR0705")
+					(reference "#PWR0701")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
@@ -1573,7 +1781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb3d7289-7c64-4c9d-bc24-feb44920fd5b")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR0705"
 			(at 127 115.57 0)
 			(effects
 				(font
@@ -1623,11 +1831,89 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "#PWR0810")
+					(reference "#PWR0905")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
+					(reference "#PWR0705")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
 					(reference "#PWR0805")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 140.97 100.33 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da41cfe7-67aa-45f1-bacc-ef35446ef512")
+		(property "Reference" "#PWR0706"
+			(at 140.97 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 140.97 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "174c7535-0504-4583-971e-3dd4b5ca8e93")
+		)
+		(instances
+			(project "drvr"
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
+					(reference "#PWR0906")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
+					(reference "#PWR0706")
+					(unit 1)
+				)
+				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
+					(reference "#PWR0806")
 					(unit 1)
 				)
 			)
@@ -1643,7 +1929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e03852be-a923-468d-b0b7-2ed0a68f0f18")
-		(property "Reference" "#PWR0702"
+		(property "Reference" "#PWR0704"
 			(at 127 104.14 0)
 			(effects
 				(font
@@ -1693,11 +1979,11 @@
 		(instances
 			(project "drvr"
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/87bd7111-59a3-4ada-993e-96677a40981d"
-					(reference "#PWR0809")
+					(reference "#PWR0904")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/910a803c-34b5-4d88-a9f3-cf236218f1b3"
-					(reference "#PWR0702")
+					(reference "#PWR0704")
 					(unit 1)
 				)
 				(path "/81ae36e8-9cac-4279-b747-86fcffa363b5/9b9f606d-c70d-4154-9943-9184e55bb06a"
